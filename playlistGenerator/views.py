@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("<div> fuck </div>")
+     return render(request, 'spotifyAuth.html', {}, content_type='text/html')
